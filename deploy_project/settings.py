@@ -83,9 +83,9 @@ WSGI_APPLICATION = 'deploy_project.wsgi.application'
 import os
 if os.environ.get("RENDER"):
     DATABASES={
-        "defalut":{
+        "default":{
             "ENGINE":"django.db.backends.mysql",
-            "NAMEE":os.environ.get("MYSQLDATABASE"),
+            "NAME":os.environ.get("MYSQLDATABASE"),
             "USER":os.environ.get("MYSQLUSER"),
             "PASSWORD":os.environ.get("MYSQLPASSWORD"),
             "HOST":os.environ.get("MYSQLHOST"),
@@ -97,7 +97,7 @@ else:
      DATABASES={
         "defalut":{
             "ENGINE":"django.db.backends.mysql",
-            "NAMEE":"class",
+            "NAME":"class",
             "USER":"root",
             "PASSWORD":"tejA@2004",
             "HOST":"localhost",
